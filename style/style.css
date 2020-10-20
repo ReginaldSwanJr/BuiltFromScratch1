@@ -1,0 +1,92 @@
+body{
+    margin: 0 auto;
+}
+
+.wrapper{
+    background: #2d2d30;
+    color: #bdbdbd;
+    /* background-color: grey; */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.info{
+    padding: 5% 20% 5% 20%;
+}
+
+.carousel img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+  
+
+/* Nav bar stuff */
+.flex-nav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-size: smaller; /*change later */
+    opacity: 0.699;
+    color: #bdbdbd;
+}
+
+.flex-nav ul{
+    background-color: #2d2d30;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.flex-nav li{
+    padding: 1em;
+}
+
+.flex-nav li:hover{
+    color: white;
+    background-color: rgba(19, 19, 19, 0.9);
+}
+
+.logo{
+    margin-right: auto;
+}
+
+/* The Band */
+.band-container{
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+
+/* Tour Dates */
+.tour-list-group{
+    text-align: left;
+}
+
+.tour-list .paris{
+    padding-left: 0;
+}
+
+.tour-list .sanfran{
+    padding-right: 0;
+}
+
+/* Contact */
+.contact-container{
+    background-color: whitesmoke;
+    color: #2d2d30;
+    /* text-align: center; */
+}
+
+.contact-container button{
+    float: right;
+}
+
+/* Map */
+.map{
+    background-image: url("/media/map.jpg");
+}
+
+
+
