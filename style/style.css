@@ -79,9 +79,19 @@ body{
     /* text-align: center; */
 }
 
-.contact-container button{
-    float: right;
+.contact-container .name{
+    padding-bottom: 1rem;
 }
+
+.contact-container .email{
+    margin-left: auto;
+    padding-bottom: 1rem;
+}
+
+.contact-container button{
+    margin-left: auto;
+}
+
 
 /* Map */
 .map{
