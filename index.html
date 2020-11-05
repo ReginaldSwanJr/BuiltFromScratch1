@@ -3,16 +3,30 @@
     <head>
         <link rel="stylesheet" type="text/css" href="/style/style.css" >
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    </head>
+
+      </head>
     <body>
-        <nav class="flex-nav">
+        <div class="flex-nav">
+          <nav>
             <ul>
                 <li class="logo"><a>Logo</a></li>
                 <li><a>HOME</a></li>
                 <li><a>BAND</a></li>
                 <li><a>TOUR</a></li>
-                <li><a>CONTACT</a></li>
-                <li><a>MORE</a></li>
+                <li><a>Contact</a></li>
+
+                <li class="nav-item dropdown">
+                  
+                  <a class=" dropdown-toggle" data-toggle="dropdown" href="#">MORE</a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Link1</a>
+                    <a class="dropdown-item" href="#">Link2</a>
+                    <a class="dropdown-item" href="#">Link3</a>
+                  </div>
+
+                </li>
+                
+                
                 <li>
                     <a>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -21,8 +35,12 @@
                         </svg>
                     </a>
                 </li>
+
             </ul>
         </nav>
+        </div>
+        
+
         <div class="wrapper">
         
         <!-- carousel  -->
@@ -123,7 +141,7 @@
               <div class="tour-list row">
 
                 <div class="col paris">
-                  <div class="card text-center">
+                  <div class="card text-center h-100">
                     <img class="card-img-top " src="media/paris.jpg">
                     <div class="card-body">
                       <h5 class="card-title">Paris</h5>
@@ -134,7 +152,7 @@
                 </div>
                 
                 <div class="col newyork">
-                  <div class="card text-center">
+                  <div class="card text-center h-100">
                     <img class="card-img-top" src="media/newyork.jpg">
                     <div class="card-body">
                       <h5 class="card-title">New York</h5>
@@ -145,7 +163,7 @@
                 </div>
                 
                 <div class="col sanfran">
-                  <div class="card text-center">
+                  <div class="card text-center h-100">
                     <img class="card-img-top" src="media/sanfran.jpg">
                     <div class="card-body">
                       <h5 class="card-title">San Francisco</h5>
@@ -163,7 +181,7 @@
 
           <div class="contact-container container-fluid">
 
-            <div class="info">
+          <div class="info">
 
               <div class="row justify-content-center"> <h3>Contact</h3></div>
 
@@ -175,59 +193,112 @@
               
               <div class="row justify-content-center"> 
                 
-              <div class="col-md-4">
-                  <p>Fan? Drop a note.</p>
-                  <p>Chicago US</p>
-                  <P>Phone: +00 1515151515</P>
-                  <p>Email: mail@mail.com</p>
-              </div>
+                <div class="col-md-4">
+                    <p>Fan? Drop a note.</p>
+                    <p>Chicago US</p>
+                    <P>Phone: +00 1515151515</P>
+                    <p>Email: mail@mail.com</p>
+                </div>
 
-              <div class="col-md-8">
-                <form>
+                <div class="col-md-8">
+                  <form>
 
-                  <div class="row">
-                
-                    <div class="name">
-                      <input type="text" id="name"  placeholder="Name">
-                    </div>
-
-                    <div class="email">
-                      <input type="text" id="email" placeholder="Email">
-                    </div>
-            
-                  </div>
-
-                  <div class="row">
-                      <textarea class="col-md-12" rows="3" id="comment" placeholder="Comments"></textarea>
-                  </div>
-
-                  <br>
-
-                  <div class="row">
-                    <button type="submit" >Send</button>
-                  </div>
+                    <div class="row">
                   
-                </form>
-              </div>
+                      <div class="name">
+                        <input type="text" id="name"  placeholder="Name">
+                      </div>
+
+                      <div class="email">
+                        <input type="text" id="email" placeholder="Email">
+                      </div>
+              
+                    </div>
+
+                    <div class="row">
+                        <textarea class="col-md-12" rows="3" id="comment" placeholder="Comments"></textarea>
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+                      <button type="submit" >Send</button>
+                    </div>
+                    
+                  </form>
+                  <br>
+                </div>
 
             </div>
 
-            </div>
+            <!-- Nav tabs -->
+            <div class=" row justify-content-center"> <h3>From The Blog</h3> <br></div>
+            <!-- <h3 class="justify-content-center">From The Blog</h3> -->
+           
+              <div class="row">
+
+              
+              <ul class="nav nav-tabs" role="tablist">
+
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#Mike">Mike</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#Chandler">Chandler</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#Peter">Peter</a>
+                </li>
+              </ul> 
             
+
+            <!-- Tab panes -->
+
+            <div class="tab-content">
+              <div id="Mike" class="tab-pane container active" >
+                <br>
+                <h3>Mike Ross, Manager</h3>
+                <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum</p>
+              </div>
+              <div id="Chandler" class="tab-pane container fade">
+                <br>
+                <h3>Chandler Bing, Guitarist</h3>
+                <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
+              </div>
+              <div id="Peter" class="tab-pane container fade" >
+                <br>
+                <h3>Peter Griffin, Bass player</h3>
+                <p>I mean, sometimes I enhoy the show, but other times I enhoy other things.</p>
+              </div>
+            </div>
           </div>
 
 
-          <!-- Map  -->
-          
-          <img src="media/map.jpg" style="width: 100%;">
-
-          <!-- Footer  -->
+          </div> 
             
+          </div>
+
+          <!-- Map  -->
+          <div>
+            <img src="media/map.jpg" style="width: 100%; padding-bottom: 2rem;">
+          </div>
+          
+           <!-- Footer  -->
+          <div class="footer-wrapper">
+            <br>
+            <p>Bootstrap Theme Made by Swanjae The Great</p>
+            <br>
+          </div>
+
         </div>
+      
+
+        
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    
     </body>
 
 </html>
