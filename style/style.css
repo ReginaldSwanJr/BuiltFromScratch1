@@ -1,5 +1,7 @@
 body{
     margin: 0 auto;
+    z-index: 50;
+    /* padding-top: 3%; */
 }
 
 .wrapper{
@@ -23,18 +25,25 @@ body{
   
 
 /* Nav bar stuff */
-
 .flex-nav{
     position: sticky;
+   
     top: 0;
     z-index: 100;
     font-size: smaller; /*change later */
-    /* opacity: 0.699; */
-    color: #bdbdbd;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+
+.flex-nav-navbar{
+    position: absolute;
+    width: 100%;
+    /* color: green; */
 }
 
 .flex-nav ul{
-    background-color: rgba(45, 45, 48, 0.6);
+    background-color: rgba(45, 45, 48, 0.9);
     list-style: none;
     margin: 0;
     padding: 0;
@@ -60,6 +69,9 @@ body{
     text-align: center;
 }
 
+.band-container .img-thumbnail{
+    padding: 0;
+}
 
 /* Tour Dates */
 .tour-container{
@@ -80,27 +92,56 @@ body{
 
 .card{
     color: #2d2d30;
-    
+}
+
 
 /* Contact */
 .contact-container{
     background-color: whitesmoke;
+    text-align: center;
+}
+
+.contact-container h3{
     color: #2d2d30;
-    /* text-align: center; */
 }
 
 .contact-container .name{
-    padding-bottom: 1rem;
+    padding-left: 0;
 }
 
 .contact-container .email{
-    margin-left: auto;
-    padding-bottom: 1rem;
+    padding-right: 0;
 }
 
 .contact-container button{
     margin-left: auto;
 }
+
+.contact-container .left{
+    font-size: 50%;
+    text-align: left;
+}
+
+.contact-container input{
+    background-color: whitesmoke;
+}
+.contact-container textarea{
+    background-color: whitesmoke;
+}
+
+.contact-container a{
+    color: #bdbdbd;
+}
+
+.contact-container .nav-tabs .nav-link.active{
+    background-color: whitesmoke;
+}
+
+.contact-container .nav-link:hover{
+    background-color: #bdbdbd;
+    color: #2d2d30;
+}
+
 
 
 /* Map */
@@ -110,10 +151,10 @@ body{
 
 
 /* Footer */
-.footer-wrapper{
+.footer-container{
+    padding: 1rem;
     background-color: #2d2d30;
-    color: red;
+    color: #bdbdbd;
 }
-
 
 
