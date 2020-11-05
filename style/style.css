@@ -4,6 +4,7 @@ body{
     /* padding-top: 3%; */
 }
 
+
 .wrapper{
     /* background: #2d2d30; */
     color: #bdbdbd;
@@ -22,6 +23,12 @@ body{
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
   }
+
+.carousel-indicators li{
+    border-radius: 50%;
+    width: 12px !important;
+    height: 12px !important;
+}
   
 
 /* Nav bar stuff */
@@ -30,16 +37,15 @@ body{
    
     top: 0;
     z-index: 100;
-    font-size: smaller; /*change later */
+    font-size: 8px; /*change later */
     margin: 0;
     padding: 0;
-    color: whitesmoke;
+    color: #bdbdbd;
 }
 
 .flex-nav-navbar{
     position: absolute;
     width: 100%;
-    /* color: green; */
 }
 
 .flex-nav ul{
@@ -56,11 +62,27 @@ body{
 
 .flex-nav li:hover{
     color: white;
-    background-color: rgba(19, 19, 19, 0.9);
+    /* background-color: rgba(19, 19, 19, 0.9); */
+}
+
+.flex-nav .dropdown-menu{
+    top: 7px !important;
+    left: 13px !important;
+    width: 60%;
+}
+
+.flex-nav .dropdown-toggle{
+    color: #bdbdbd;
+}
+
+.flex-nav .dropdown-toggle:hover{
+    color: whitesmoke;
+    text-decoration: none;
 }
 
 .logo{
     margin-right: auto;
+    margin-left: 1rem;
 }
 
 /* The Band */
@@ -92,6 +114,9 @@ body{
 
 .card{
     color: #2d2d30;
+    font-size: 50%;
+    max-height: auto;
+    max-width: auto;
 }
 
 
